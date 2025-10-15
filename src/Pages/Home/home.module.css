@@ -334,8 +334,8 @@
 
 @media (max-width: 575.98px) {
   .heroInner {
-    min-height: 80vh;
-    height: 80vh;
+    min-height: 100vh;
+    height: 100vh;
   }
 
   .heroContentCenter {
@@ -468,8 +468,8 @@
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   .heroInner {
-    min-height: 90vh;
-    height: 90vh;
+    min-height: 100vh;
+    height: 100vh;
   }
 
   .heroContentCenter {
