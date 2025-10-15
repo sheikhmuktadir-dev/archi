@@ -1,0 +1,39 @@
+{
+  "footer": {
+    "corporateOffice": {
+      "title": "Corporate Office",
+      "address": "Al QuozAl - 22th St - Al Quoz - Al Quoz Industrial Area 2 - Dubai - UAE",
+      "phone": "+971 50 123 4567"
+    },
+    "navigation": {
+      "title": "Navigation",
+      "links": [
+        { "label": "Home", "path": "/" },
+        { "label": "About", "path": "/about" },
+        { "label": "Projects", "path": "/projects" },
+        { "label": "Contacts", "path": "/contact" }
+      ]
+    },
+    "socialMedia": {
+      "title": "Social Media",
+      "links": [
+        { "label": "Instagram", "path": "/" },
+        { "label": "X/Twitter", "path": "/" },
+        { "label": "Tik Tok", "path": "/" },
+        { "label": "Pinterest", "path": "/" }
+      ]
+    },
+    "newsletter": {
+      "title": "Join Our News",
+      "subtitle": "Receive notifications about new offers",
+      "placeholder": "Email"
+    },
+    "bottom": {
+      "text": "@2025 All Right Reserved",
+      "privacyPolicy": {
+        "label": "Privacy Policy",
+        "path": "/"
+      }
+    }
+  }
+}

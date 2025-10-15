@@ -1,0 +1,224 @@
+.projectCard {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.projectCard:nth-child(3) {
+  padding-left: var(--projectcard-largegap);
+}
+
+/* project card image */
+
+.projectCardImageCover {
+  position: relative;
+  perspective: 800px;
+  overflow: hidden;
+}
+
+.projectCardImage {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  height: var(--project-image);
+  object-fit: cover;
+  object-position: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.projectCard:hover .projectCardImage {
+  transform: scale(1.05, 1.05);
+}
+
+.projectCard:nth-child(3) .projectCardImage {
+  height: var(--project-large-image);
+}
+
+/* project card text */
+
+.projectCardTextFlex {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 10px 0 0;
+}
+
+/* ******************************************* project card end **************************************************** */
+
+.hoverCard {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  border-bottom: 1px solid var(--border-gray);
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  padding: 40px 0;
+  background: transparent;
+  transition: background 0.4s ease-in, transform 0.4s ease-in,
+    padding 0.4s ease-in;
+  cursor: pointer;
+}
+
+.hoverCardActive {
+  background: var(--secondary-white-background);
+  padding: 40px 40px;
+  transform: translateY(-10px);
+}
+
+/* number */
+.hoverCardNum {
+  color: var(--muted-white-color);
+}
+
+.hoverCardActive .hoverCardNum {
+  color: var(--primary-black-background);
+}
+
+/* middle text */
+.hoverCardText {
+  position: relative;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* h4 */
+.hoverCardTitle {
+  position: relative;
+}
+
+.hoverCardActive .hoverCardTitle {
+  color: var(--primary-black-background);
+  font-weight: 400;
+}
+
+/* p */
+.hoverCardPara {
+  display: none;
+}
+
+.hoverCardActive .hoverCardPara {
+  display: block;
+  color: var(--primary-black-background);
+}
+
+/* image */
+.hoverCardImage {
+  position: absolute;
+  width: var(--hovercard-image-width);
+  height: var(--hovercard-image-height);
+  z-index: 70;
+  right: 150px;
+  top: 50%;
+  transform: translateY(-50%);
+  object-fit: cover;
+  object-position: center center;
+  pointer-events: none;
+}
+
+/* arrow */
+.hoverCardArrow {
+  position: relative;
+  justify-self: end;
+  font-size: var(--h5-heading-fontsize);
+}
+
+.hoverCardActive .hoverCardArrow {
+  color: var(--primary-black-background);
+}
+
+/* **************************************** hover card end ****************************************************** */
+
+.galleryCard {
+  position: relative;
+  cursor: pointer;
+  width: var(--gallery-card-width);
+  transition: all 0.4s ease;
+  height: var(--gallery-card-height);
+  overflow: hidden;
+}
+
+.galleryCardActive {
+  width: var(--gallery-activecard-width);
+  height: var(--gallery-activecard-height);
+}
+
+.galleryCardImage {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* ************************************** gallery card end ****************************** */
+
+@media (max-width: 575.98px) {
+  .projectCard:nth-child(3) {
+    padding-left: 0;
+  }
+
+  .hoverCard {
+    grid-template-columns: 1fr;
+    padding: 20px 0;
+  }
+
+  .hoverCardImage,
+  .hoverCardArrow {
+    display: none;
+  }
+
+  .hoverCardActive {
+    padding: 20px 20px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .projectCard:nth-child(3) {
+    padding-left: 0;
+  }
+
+  .hoverCardImage,
+  .hoverCardArrow {
+    display: none;
+  }
+
+  .hoverCard {
+    grid-template-columns: 1fr 2fr;
+    padding: 20px 0;
+  }
+
+  .hoverCardActive {
+    padding: 20px 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .projectCard:nth-child(3) {
+    padding-left: 0;
+  }
+
+  .hoverCardImage {
+    display: none;
+  }
+
+  .hoverCard {
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 20px 0;
+  }
+
+  .hoverCardActive {
+    padding: 20px 20px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1440.98px) {
+  .hoverCardImage {
+    right: 100px;
+  }
+}

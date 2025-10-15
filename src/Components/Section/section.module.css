@@ -1,0 +1,21 @@
+.section {
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  height: auto;
+  background: var(--primary-black-background);
+}
+
+.noSectionPadding {
+  padding: 0;
+}
+
+.sectionPaddingLarge {
+  padding: var(--sectionlarge-padding);
+}
+
+@media (max-width: 991.98px) {
+  .section {
+    border-bottom: 1px solid var(--border-blur);
+  }
+}

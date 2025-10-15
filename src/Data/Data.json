@@ -1,0 +1,150 @@
+{
+  "hero": {
+    "heading": "Archi",
+    "subheading": "From concept to realization creating structures that inspire and endure.",
+    "image": "/images/hero/banner.webp",
+    "bottomTextOne": "Architecture",
+    "bottomTextTwo": "Interior Design",
+    "cta": "Consultation",
+    "link": "/"
+  },
+  "about": {
+    "title": "About",
+    "description": "An award-winning Dubai studio crafting timeless, innovative, and sustainable architectural designs.",
+    "bottomParaOne": "Timeless interior and architectural concepts that blend modern aesthetics with individuality. We craft spaces that inspire and endure, combining creativity with functionality in every detail.",
+    "bottomParaTwo": "Tailor-made solutions for residential and commercial spaces that reflect your personality and needs. Each project is thoughtfully designed to harmonize elegance, purpose, and a unique sense of style.",
+    "cta": "View More",
+    "link": "/"
+  },
+  "services": {
+    "title": "Services",
+    "service": [
+      {
+        "num": "01",
+        "serviceName": "Consultation",
+        "image": "/images/services/service1.webp"
+      },
+      {
+        "num": "02",
+        "serviceName": "Architecture",
+        "image": "/images/services/service2.webp"
+      },
+      {
+        "num": "03",
+        "serviceName": "Interior Design",
+        "image": "/images/services/service3.webp"
+      },
+      {
+        "num": "04",
+        "serviceName": "Art Direction",
+        "image": "/images/services/service4.webp"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Each project is a story told through space. Discover how we transform vision into reality.",
+    "cta": "All Projects",
+    "link": "/",
+    "cards": [
+      {
+        "id": 1,
+        "image": "/images/projects/project1.webp",
+        "title": "Arqa",
+        "date": "2023"
+      },
+      {
+        "id": 2,
+        "image": "/images/projects/project2.webp",
+        "title": "Vivere",
+        "date": "2020"
+      },
+      {
+        "id": 3,
+        "image": "/images/projects/project3.webp",
+        "title": "Lumina",
+        "date": "2024"
+      },
+      {
+        "id": 4,
+        "image": "/images/projects/project4.webp",
+        "title": "Horizon",
+        "date": "2021"
+      }
+    ]
+  },
+  "process": {
+    "title": "Process",
+    "description": "We manage projects with consistency and transparency, ensuring maximum quality and exceeding expectations.",
+    "processCard": [
+      {
+        "id": 1,
+        "image": "/images/process/process1.webp",
+        "number": "01",
+        "title": "Discussion of the project",
+        "description": "We begin by understanding your vision, goals, and project requirements."
+      },
+      {
+        "id": 2,
+        "image": "/images/process/process2.webp",
+        "number": "02",
+        "title": "Concept",
+        "description": "Our team develops an initial concept that reflects your ideas and style."
+      },
+      {
+        "id": 3,
+        "image": "/images/process/process3.webp",
+        "number": "03",
+        "title": "Architecture design",
+        "description": "We craft a functional and aesthetic architectural design tailored to your needs."
+      },
+      {
+        "id": 4,
+        "image": "/images/process/process4.webp",
+        "number": "04",
+        "title": "Interior design & Art direction",
+        "description": "We refine interiors with thoughtful design, materials, and artistic direction. "
+      }
+    ]
+  },
+  "consultation": {
+    "image": "/images/others/bg.webp",
+    "textOne": "Every element is carefully selected to create interiors that remain elegant, functional, and timeless for years to come.",
+    "textTwo": "We use only premium materials and furniture from trusted brands, ensuring exceptional quality and lasting beauty in every detail.",
+    "cta": "Consultation",
+    "link": "/"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "galleryCard": [
+      {
+        "name": "Alex",
+        "image": "/images/gallery/gallery01.webp"
+      },
+      {
+        "name": "Alex",
+        "image": "/images/gallery/gallery02.webp"
+      },
+      {
+        "name": "Alex",
+        "image": "/images/gallery/gallery03.webp"
+      },
+      {
+        "name": "Alex",
+        "image": "/images/gallery/gallery04.webp"
+      },
+      {
+        "name": "Alex",
+        "image": "/images/gallery/gallery05.webp"
+      }
+    ]
+  },
+  "questions": {
+    "title": "Request",
+    "description": "Have Any Questions",
+    "subheading": "Leave a request for a free consultation",
+    "cta": "Leave a request",
+    "placeholderOne": "Name",
+    "placeholderTwo": "E-mail"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "navbar": {
+    "logo": "Archi.",
+    "menus": [
+      {
+        "label": "Home",
+        "url": "/"
+      },
+      {
+        "label": "About",
+        "url": "/"
+      },
+      {
+        "label": "Projects",
+        "url": "/"
+      }
+    ],
+    "cta": {
+      "ctaLabel": "Contacts",
+      "ctaUrl": "/"
+    }
+  }
+}

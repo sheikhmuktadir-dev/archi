@@ -1,0 +1,722 @@
+.heroInner {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  min-height: 100vh;
+  height: 130vh;
+}
+
+.heroInner::before {
+  content: "";
+  position: absolute;
+  z-index: 30;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.4) 59.3%, #000);
+}
+
+/* hero image ******************* */
+.heroImage {
+  position: relative;
+  max-width: 100%;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  object-position: center center;
+  object-fit: cover;
+}
+
+/* hero content ******************* */
+.heroContent {
+  max-width: var(--container-width);
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  bottom: 0;
+  padding: var(--large-padding) 1rem;
+  z-index: 50;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* hero center content ***************** */
+.heroContentCenter {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+  z-index: 70;
+}
+
+.heroContentBottomFlex {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heroBtnArea {
+  display: flex;
+  width: 100%;
+  padding: 60px var(--large-padding) 0 0;
+  justify-content: end;
+}
+
+/* *********************************************************  hero end  ********************************************* */
+
+.homeTopHeadingGrid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  padding: 0 0 var(--large-padding);
+  z-index: 20;
+}
+
+.homeSmallTextCover {
+  position: relative;
+  max-width: 450px;
+}
+
+/* ************************************************************ heading end ******************************************* */
+
+.aboutContentGrid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+  z-index: 20;
+}
+
+/* *************************************************************** about end ************************************** */
+
+.serviceGrid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  z-index: 20;
+}
+
+.serviceMainArea {
+  position: relative;
+  justify-self: center;
+}
+
+/* ul */
+.serviceList {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 50;
+  justify-content: center;
+}
+
+/* li */
+.serviceItem {
+  position: relative;
+  display: flex;
+  font-size: var(--h1-heading-fontsize);
+  text-transform: uppercase;
+  align-items: center;
+  gap: 20px;
+  line-height: 1.8;
+  cursor: pointer;
+  z-index: 70;
+  color: var(--muted-white-color);
+  transition: color 0.2s ease;
+}
+
+.serviceItemActive {
+  color: var(--primary-white-color);
+}
+
+/* 2nd li */
+.serviceItem:nth-child(2) {
+  transform: translateX(-30%);
+}
+
+/* 3rd li */
+.serviceItem:nth-child(3) {
+  transform: translateX(30%);
+}
+
+/* 4th li */
+.serviceItem:nth-child(4) {
+  transform: translateX(-10%);
+}
+
+.serviceItem sup {
+  margin-top: -10px;
+  font-size: var(--h6-heading-fontsize);
+}
+
+/* service bg image */
+.serviceImage {
+  max-width: var(--service-image-width);
+  height: var(--service-image-height);
+  object-fit: cover;
+  object-position: center center;
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(20deg) scale(1);
+  opacity: 0.8;
+}
+
+/* *************************************************************** service end ************************************** */
+
+.projectCardGrid {
+  position: relative;
+  display: grid;
+  align-items: start;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  grid-template-columns: 0.7fr 0.7fr 1.5fr 0.7fr;
+  z-index: 20;
+}
+
+.projectsBtnArea {
+  position: relative;
+  margin-top: -60px;
+}
+
+/* ************************************************************* project end ******************************************* */
+
+.processCardArea {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 20;
+}
+
+/* *************************************************************** process end ****************************************** */
+
+.homeConsultationInner {
+  position: relative;
+  height: 80vh;
+}
+
+.homeConsultationImage {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.homeConsultationInner::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: auto;
+  left: 0;
+  z-index: 30;
+  right: 0;
+  height: max(0rem, 50%);
+  background: linear-gradient(180deg, #000, transparent);
+}
+
+.homeConsultationInner::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: auto;
+  z-index: 30;
+  transform: scaleY(-1);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: max(0rem, 50%);
+  background: linear-gradient(180deg, #000, transparent);
+}
+
+.homeConsultationContent {
+  position: absolute;
+  max-width: var(--container-width);
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  top: 0;
+  bottom: 0;
+  padding: var(--large-padding) 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.homeConsultationContentStart {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 100%;
+  flex: 0 0 50%;
+}
+
+.homeConsultationContentEnd {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  height: 100%;
+  flex: 0 0 50%;
+}
+
+.homeConsultationBtn {
+  position: relative;
+}
+
+/* *************************************************************** consultation end ****************************************** */
+
+.questionsArea {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.questionsAreaHeading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputAreaFlex {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--forminput-largegap);
+  flex-wrap: wrap;
+}
+
+.inputArea {
+  position: relative;
+  width: calc((100% - var(--forminput-largegap)) / 2);
+}
+
+.submitBtnArea {
+  position: relative;
+  padding: var(--large-padding) 0 0;
+  display: flex;
+  justify-content: start;
+}
+
+/* ************************************* questions end **************************** */
+
+.galleryCardArea {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* **************************************** team end ***************************** */
+
+@media (max-width: 575.98px) {
+  .heroInner {
+    min-height: 80vh;
+    height: 80vh;
+  }
+
+  .heroContentCenter {
+    gap: 30px;
+  }
+
+  .heroContent {
+    padding: 40px 1.5rem;
+  }
+
+  .heroBtnArea {
+    padding: 40px 0 0 0;
+    justify-content: start;
+  }
+
+  .homeSmallTextCover {
+    max-width: 100%;
+  }
+
+  /* hero section end ****************/
+
+  .homeTopHeadingGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .aboutContentGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  /* about section end ****************/
+
+  .serviceGrid {
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 40px;
+    justify-content: start;
+  }
+
+  /* 2nd li */
+  .serviceItem:nth-child(2) {
+    transform: translateX(-0%);
+  }
+
+  /* 3rd li */
+  .serviceItem:nth-child(3) {
+    transform: translateX(0%);
+  }
+
+  /* 4th li */
+  .serviceItem:nth-child(4) {
+    transform: translateX(-0%);
+  }
+
+  .serviceImage {
+    right: 30px;
+  }
+
+  .serviceItem {
+    font-size: var(--h2-heading-fontsize);
+  }
+
+  .serviceMainArea {
+    justify-self: start;
+  }
+
+  .serviceList {
+    align-items: start;
+    gap: 30px;
+  }
+
+  .serviceMainArea {
+    width: 100%;
+  }
+
+  /* service section end ***********************/
+
+  .projectCardGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .projectsBtnArea {
+    margin-top: 40px;
+  }
+
+  /* project section end ***************/
+
+  .homeConsultationContent {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 40px 1.5rem;
+  }
+
+  .homeConsultationInner {
+    height: 50vh;
+  }
+
+  .homeConsultationContentStart {
+    display: none;
+  }
+
+  .homeConsultationContentEnd {
+    flex: none;
+    width: 100%;
+    justify-content: center;
+    height: auto;
+    gap: 30px;
+    align-items: start;
+  }
+
+  /* consultation section end *******************/
+
+  .inputArea {
+    width: 100%;
+  }
+
+  .questionsArea {
+    gap: 30px;
+  }
+
+  /* questions || form section end  ***************************/
+
+  .galleryCardArea {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .heroInner {
+    min-height: 90vh;
+    height: 90vh;
+  }
+
+  .heroContentCenter {
+    gap: 40px;
+  }
+
+  .heroContent {
+    padding: 60px 3rem;
+  }
+
+  .heroBtnArea {
+    padding: 60px 0 0 0;
+    justify-content: start;
+  }
+
+  .homeSmallTextCover {
+    max-width: 100%;
+  }
+
+  /* hero section end ****************/
+
+  .homeTopHeadingGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .aboutContentGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  /* about section end ****************/
+
+  .serviceGrid {
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 40px;
+    justify-content: start;
+  }
+
+  /* 2nd li */
+  .serviceItem:nth-child(2) {
+    transform: translateX(-0%);
+  }
+
+  /* 3rd li */
+  .serviceItem:nth-child(3) {
+    transform: translateX(0%);
+  }
+
+  /* 4th li */
+  .serviceItem:nth-child(4) {
+    transform: translateX(-0%);
+  }
+
+  .serviceImage {
+    right: 50px;
+  }
+
+  .serviceItem {
+    font-size: var(--h2-heading-fontsize);
+  }
+
+  .serviceMainArea {
+    justify-self: start;
+  }
+
+  .serviceList {
+    align-items: start;
+    gap: 30px;
+  }
+
+  .serviceMainArea {
+    width: 100%;
+  }
+
+  /* service section end ***********************/
+
+  .projectCardGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .projectsBtnArea {
+    margin-top: 60px;
+  }
+
+  /* project section end ****************** */
+
+  .homeConsultationInner {
+    height: 60vh;
+  }
+
+  .homeConsultationContent {
+    padding: 60px 3rem;
+  }
+
+  .homeConsultationContentEnd {
+    justify-content: start;
+    gap: 40px;
+    align-items: end;
+    text-align: end;
+  }
+
+  /* consultation secttion end ****************** */
+
+  .galleryCardArea {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .heroInner {
+    min-height: 100vh;
+    height: 100vh;
+  }
+
+  .heroContentCenter {
+    gap: 40px;
+  }
+
+  .heroContent {
+    padding: 80px 4rem;
+  }
+
+  .heroBtnArea {
+    padding: 80px 0 0 0;
+    justify-content: start;
+  }
+
+  .homeSmallTextCover {
+    max-width: 100%;
+  }
+
+  /* hero section end ****************/
+
+  .homeTopHeadingGrid {
+    grid-template-columns: 1fr 2.5fr;
+    gap: 20px;
+  }
+
+  .aboutContentGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  /* about section end ****************/
+
+  .serviceGrid {
+    grid-template-columns: 1fr 2.5fr;
+    align-items: start;
+    gap: 40px;
+    justify-content: start;
+  }
+
+  /* 2nd li */
+  .serviceItem:nth-child(2) {
+    transform: translateX(-20%);
+  }
+
+  /* 3rd li */
+  .serviceItem:nth-child(3) {
+    transform: translateX(20%);
+  }
+
+  /* 4th li */
+  .serviceItem:nth-child(4) {
+    transform: translateX(-10%);
+  }
+
+  /* service section end ********************** */
+
+  .projectCardGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .projectsBtnArea {
+    margin-top: 80px;
+  }
+
+  /* project section end ****************** */
+
+  .homeConsultationInner {
+    height: 60vh;
+  }
+
+  .homeConsultationContent {
+    padding: 80px 4rem;
+  }
+
+  .homeConsultationContentEnd {
+    justify-content: start;
+    gap: 40px;
+    align-items: end;
+    text-align: end;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .heroBtnArea {
+    padding: 80px 0 0 0;
+  }
+
+  /* ************** hero section end */
+
+  .projectCardGrid {
+    grid-template-columns: 0.7fr 0.7fr 1.2fr 0.7fr;
+    gap: 20px;
+  }
+
+  .projectsBtnArea {
+    margin-top: 80px;
+  }
+
+  /* project section end ****************** */
+
+  .homeConsultationInner {
+    height: 70vh;
+  }
+
+  .homeConsultationContent {
+    padding: 80px 2rem;
+  }
+
+  .homeConsultationContentEnd {
+    justify-content: start;
+    gap: 40px;
+    align-items: end;
+    text-align: end;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .projectCardGrid {
+    grid-template-columns: 0.7fr 0.7fr 1.2fr 0.7fr;
+    gap: 20px;
+  }
+
+  .projectsBtnArea {
+    margin-top: 80px;
+  }
+
+  /* project section end ****************** */
+
+  .homeConsultationInner {
+    height: 70vh;
+  }
+}

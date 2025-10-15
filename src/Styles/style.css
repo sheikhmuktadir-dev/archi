@@ -1,0 +1,195 @@
+.textUpperCase {
+  text-transform: uppercase;
+}
+
+/* *************** text align ***************** */
+
+.textStart {
+  text-align: start;
+}
+
+.textEnd {
+  text-align: end;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+/* ********************* color **************** */
+
+.primaryColor {
+  color: var(--primary-white-color);
+}
+
+.secondaryColor {
+  color: var(--secondary-white-color);
+}
+
+.lightColor {
+  color: var(--light-white-color);
+}
+
+.mutedColor {
+  color: var(--muted-white-color);
+}
+
+/* ********************   heading  ************************** */
+
+.ExtraLargeHeading {
+  position: relative;
+  font-size: var(--verylarge-heading-fontsize);
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-transform: uppercase;
+  color: var(--secondary-white-color);
+  font-weight: 300;
+}
+
+h1 {
+  position: relative;
+  font-size: var(--h1-heading-fontsize);
+  line-height: 1.2;
+  font-weight: 300;
+  color: var(--secondary-white-color);
+  font-family: var(--primary-font);
+}
+
+h2 {
+  position: relative;
+  font-size: var(--h2-heading-fontsize);
+  line-height: 1.4;
+  font-weight: 300;
+  color: var(--secondary-white-color);
+  font-family: var(--primary-font);
+}
+
+h3 {
+  position: relative;
+  font-weight: 300;
+  font-size: var(--h3-heading-fontsize);
+  color: var(--secondary-white-color);
+  line-height: 1.6;
+  font-family: var(--primary-font);
+}
+
+h4 {
+  position: relative;
+  font-size: var(--h4-heading-fontsize);
+  line-height: 1.8;
+  font-weight: 300;
+  color: var(--secondary-white-color);
+  font-family: var(--secondary-font);
+}
+
+h5 {
+  position: relative;
+  font-size: var(--h5-heading-fontsize);
+  line-height: 1.8;
+  font-weight: 300;
+  color: var(--secondary-white-color);
+  font-family: var(--secondary-font);
+}
+
+h6 {
+  position: relative;
+  font-size: var(--h6-heading-fontsize);
+  line-height: 1.8;
+  font-weight: 300;
+  color: var(--secondary-white-color);
+  font-family: var(--secondary-font);
+}
+
+/* ************** */
+
+p {
+  position: relative;
+  font-size: var(--body-fontsize);
+  line-height: 1.8;
+  font-weight: 300;
+  color: var(--muted-white-color);
+  font-family: var(--secondary-font);
+}
+
+a {
+  position: relative;
+  font-size: var(--body-fontsize);
+  line-height: 1.8;
+  font-weight: 300;
+  color: var(--muted-white-color);
+  font-family: var(--secondary-font);
+}
+
+/* ********************   input box & submit button ******************** */
+
+.submitButton {
+  position: relative;
+  height: 55px;
+  padding: 0 80px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease-in-out;
+  flex: none;
+  text-align: center;
+  line-height: 1;
+  font-size: var(--button-fontsize);
+  border: 2px solid var(--border-white);
+  border-radius: 0;
+  white-space: nowrap;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 400;
+  z-index: 20;
+  color: var(--secondary-white-color);
+}
+
+.submitButton:hover {
+  transform: scale(0.9, 0.9);
+}
+
+.formBox {
+  position: relative;
+  padding: 20px 0;
+  border: none;
+  color: var(--secondary-white-color);
+  max-width: 100%;
+  width: 100%;
+  font-size: var(--body-fontsize);
+  border-bottom: 1px solid var(--border-gray);
+}
+
+@media (max-width: 575.98px) {
+  .textEnd {
+    text-align: start;
+  }
+
+  .submitButton {
+    height: 45px;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .textEnd {
+    text-align: start;
+  }
+
+  .submitButton {
+    height: 50px;
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1440.98px) {
+  .textEnd {
+    text-align: end;
+  }
+
+  .submitButton {
+    height: 50px;
+    padding: 0 50px;
+  }
+}

@@ -1,0 +1,98 @@
+.primaryButton {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 45px;
+  line-height: 1;
+  font-size: var(--button-fontsize);
+  border: none;
+  transition: transform 0.3s ease-in-out;
+  color: var(--primary-black-color);
+  padding: 0 25px;
+  border-radius: 0;
+  flex: none;
+  white-space: nowrap;
+  text-transform: capitalize;
+  font-weight: 400;
+  color: var(--primary-black-color);
+  background: var(--secondary-white-background);
+  z-index: 20;
+}
+
+.primaryButton:hover {
+  transform: scale(0.9, 0.9);
+}
+
+/* ************************************  primary button end ************************************** */
+
+.buttonLarge {
+  position: relative;
+  height: 55px;
+  padding: 0 80px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+  flex: none;
+  text-align: center;
+  line-height: 1;
+  font-size: var(--button-fontsize);
+  border: 2px solid var(--border-white);
+  border-radius: 0;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-weight: 400;
+  z-index: 20;
+}
+
+.buttonBlackBackground {
+  background: var(--primary-black-background);
+}
+
+.buttonWhiteBackground {
+  background: var(--secondary-white-background);
+}
+
+.buttonBlackColor {
+  color: var(--primary-black-color);
+}
+
+.buttonWhiteColor {
+  color: var(--secondary-white-color);
+}
+
+.buttonLarge:hover {
+  transform: scale(0.9, 0.9);
+}
+
+/* ************************************   button large end ************************************** */
+
+@media (max-width: 575.98px) {
+  .buttonLarge {
+    height: 45px;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .buttonLarge {
+    height: 50px;
+    padding: 0 45px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .buttonLarge {
+    height: 50px;
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1440.98px) {
+  .buttonLarge {
+    height: 50px;
+    padding: 0 60px;
+  }
+}

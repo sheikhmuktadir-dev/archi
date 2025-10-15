@@ -1,0 +1,175 @@
+.navMain {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  padding: 0;
+  max-width: var(--navbar-width);
+  margin: 0 auto;
+  background: var(--navbar-background);
+  width: 100%;
+  height: 70px;
+  border-radius: 0;
+  z-index: 999999;
+  display: flex;
+  line-height: 1;
+  backdrop-filter: blur(10px);
+  align-items: center;
+  border: 1px solid var(--border-gray);
+}
+
+/* nav inner  ******************/
+.navInnerFlex {
+  position: relative;
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.navLogoArea {
+  position: relative;
+}
+
+/* logo */
+.navLogo {
+  position: relative;
+  font-size: var(--logo-fontsize);
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+/* nav menu area ***********************/
+.navMenuArea {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* nav center menu *********************/
+.navCenterMenu {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ul */
+.navList {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* li */
+.navItem {
+  position: relative;
+}
+
+/* a / Link */
+.navLink {
+  position: relative;
+  color: var(--secondary-white-color);
+  font-weight: 400;
+  line-height: 1;
+  font-size: var(--navlink-fontsize);
+}
+
+/* nav end menu ************************/
+.navEndMenu {
+  position: relative;
+}
+
+/* toggle */
+.toggleBtn {
+  display: none;
+}
+
+.closeBtn {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .navMain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--border-gray);
+  }
+
+  .navLogoArea {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .toggleBtn {
+    background: transparent;
+    color: var(--primary-white-color);
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    display: block;
+  }
+
+  .navInnerFlex {
+    flex: none;
+  }
+
+  .navMenuArea {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex: none;
+    width: 100%;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    z-index: 99999999;
+    gap: 40px;
+    padding: 30px;
+    background: var(--menubar-background);
+    backdrop-filter: blur(20px);
+    opacity: 0;
+    transform: translateX(150%);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+
+  .navMenuAreaShow {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .navCenterMenu {
+    flex: none;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navList {
+    flex-direction: column;
+  }
+
+  .closeBtn {
+    position: absolute;
+    display: block;
+    right: 25px;
+    top: 20px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: var(--primary-white-color);
+    font-size: 25px;
+  }
+}
