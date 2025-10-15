@@ -1,10 +1,13 @@
+import { useState } from "react";
+import { motion } from "framer-motion";
 import Section from "../../Components/Section/Section";
 import Style from "./home.module.css";
 import heroData from "../../Data/Data.json";
 import ButtonLarge from "../../Components/Button/ButtonLarge";
-import { motion } from "framer-motion";
 
 export default function HeroSection() {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   const {
     heading = "",
     image = null,
@@ -17,40 +20,55 @@ export default function HeroSection() {
 
   return (
     <Section>
-      <div className={Style.heroInner}>
-        {/* hero image */}
+      {/* Hero Section */}
+      <div
+        className={Style.heroInner}
+        style={{
+          opacity: imageLoaded ? 1 : 0,
+          transition: "opacity 0.6s ease-out",
+        }}
+      >
+        {/* Hero image */}
         <img
           src={image}
           className={Style.heroImage}
-          alt="hero image"
-          style={{ filter: "blur(20px)", transition: "filter 0.5s" }}
-          onLoad={(e) => (e.target.style.filter = "blur(0)")}
-          loading="lazy"
+          alt="hero"
+          loading="eager"
+          style={{ filter: "blur(20px)", transition: "filter 0.6s ease" }}
+          onLoad={(e) => {
+            e.target.style.filter = "blur(0)";
+            setImageLoaded(true);
+          }}
         />
 
-        {/* hero content start */}
+        {/* Hero Content */}
         <div className={Style.heroContent}>
-          {/* hero center content  start*/}
           <div className={Style.heroContentCenter}>
+            {/* Small Text */}
             <div className={Style.homeSmallTextCover}>
               <h6 className="lightColor">{subheading}</h6>
             </div>
 
-            {/* hero large heading */}
+            {/* Large Heading */}
             <motion.div
               initial={{ opacity: 0, y: 100 }}
-              animate={{ opacity: 1, y: 0 }}
+              animate={{
+                opacity: imageLoaded ? 1 : 0,
+                y: imageLoaded ? 0 : 100,
+              }}
               transition={{ duration: 1, ease: "easeOut" }}
               className="ExtraLargeHeading"
             >
               {heading}
             </motion.div>
+
+            {/* Bottom Text */}
             <div className={Style.heroContentBottomFlex}>
               <h5 className="lightColor">{bottomTextOne}</h5>
               <h5 className="lightColor">{bottomTextTwo}</h5>
             </div>
 
-            {/* hero button */}
+            {/* CTA Button */}
             <div className={Style.heroBtnArea}>
               <ButtonLarge
                 background="buttonWhiteBackground"
@@ -61,9 +79,7 @@ export default function HeroSection() {
               </ButtonLarge>
             </div>
           </div>
-          {/* hero center content end*/}
         </div>
-        {/* hero content end */}
       </div>
     </Section>
   );
