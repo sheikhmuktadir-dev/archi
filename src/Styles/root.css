@@ -10,6 +10,10 @@
 
   --body-background: #000000;
 
+  /******************** hero */
+  --hero-minheight: 100vh;
+  --hero-height: 120vh;
+
   /**************** container */
 
   --container-width: 1600px;
@@ -106,6 +110,10 @@
     --h5-heading-fontsize: 18px;
     --h6-heading-fontsize: 15px;
 
+    /******************** hero */
+    --hero-minheight: 100vh;
+    --hero-height: 100vh;
+
     /**************** section */
     --sectionlarge-padding: 60px 0;
 
@@ -153,6 +161,10 @@
     /**************** section */
     --sectionlarge-padding: 80px 0;
 
+    /******************** hero */
+    --hero-minheight: 100vh;
+    --hero-height: 100vh;
+
     /**************** container */
     --container-width: 100%;
     --container-padding: 0 3rem;
@@ -196,6 +208,10 @@
 
     /**************** section */
     --sectionlarge-padding: 80px 0;
+
+    /******************** hero */
+    --hero-minheight: 100vh;
+    --hero-height: 100vh;
 
     /**************** container */
     --container-width: 100%;
