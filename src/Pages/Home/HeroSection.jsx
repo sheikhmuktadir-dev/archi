@@ -19,7 +19,14 @@ export default function HeroSection() {
     <Section>
       <div className={Style.heroInner}>
         {/* hero image */}
-        <img src={image} className={Style.heroImage} alt="hero image" />
+        <img
+          src={image}
+          className={Style.heroImage}
+          alt="hero image"
+          style={{ filter: "blur(20px)", transition: "filter 0.5s" }}
+          onLoad={(e) => (e.target.style.filter = "blur(0)")}
+          loading="lazy"
+        />
 
         {/* hero content start */}
         <div className={Style.heroContent}>

@@ -21,8 +21,12 @@ const routes = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "",
+        index: true,
         element: <Home />,
+      },
+      {
+        path: "*",
+        element: <ErrorPage />,
       },
     ],
   },
